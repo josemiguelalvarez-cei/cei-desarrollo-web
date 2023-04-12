@@ -1,8 +1,38 @@
 p {
-    color: red;
-    font-size: 40px;
+    color: #9c4848;
+    font-family: 'Arial';
 }
 
-p.azul {
+.destacado {
+    background-color: #e3da94;
+    font-weight: bold;
+}
+
+#encabezado-principal {
+    font-size: 64px;
+    color: #343f66;
+}
+
+ol li {
+    font-style: italic;
+}
+
+ul>li {
+    list-style: square;
+}
+
+a[href*="@profesorado"] {
+    color: orange;
+}
+
+p {
     color: blue;
+}
+
+.text {
+    color: red;
+}
+
+div#container p.text {
+    color: green;
 }

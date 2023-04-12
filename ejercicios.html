@@ -5,27 +5,31 @@
 <head>
     <title>Ejercicios HTML</title>
     <meta charset="UTF-8" />
+    <link href="estilos.css" rel="stylesheet" />
 
     <style>
-        p {
-            color: red;
+        h1 {
+            color: green;
         }
     </style>
+
+    <script src="ejercicios.js"></script>
 </head>
 
 <body>
-    <img src="imagenes/logo-cei.webp" alt="Logo de la escuela CEI" />
-    <p>Hola, mundo!</p>
+    <h1 id="encabezado-principal">Curso de desarrollo web</h1>
+    <img src="logo-cei.webp" alt="Logo de la escuela CEI" />
+    <p class="destacado">Hola, mundo!</p>
 
     <ol>
-        <li style="font-size: 40px;">HTML</li>
+        <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ol>
 
     <ul>
         <li>Java</li>
-        <li>Ruby</li>
+        <li class="destacado">Ruby</li>
         <li>PHP</li>
     </ul>
 
@@ -90,6 +94,11 @@
     </div>
     <p>Al mismo nivel</p>
     <p class="azul">A 2 niveles</p>
+
+    <div id="container">
+        <p class="text">Esto es un párrafo dentro de un div.</p>
+    </div>
+    <p class="text">Esto es un párrafo dentro de un div.</p>
 </body>
 
 </html>
