@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <button id="boton">Añadir</button>
+    <div></div>
+
+    <script>
+        const boton = document.getElementById('boton');
+        let contador = 0;
+
+        const addParagraph = function () {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Soy un párrafo añadido después del click ' + contador;
+
+            const eliminarParrafo = function () {
+                newParagraph.remove();
+                newParagraph.removeEventListener('click', eliminarParrafo);
+            };
+
+            newParagraph.addEventListener('click', eliminarParrafo);
+
+            const contenedor = document.querySelector('div');
+            contenedor.appendChild(newParagraph);
+
+            contador++;
+        }
+
+        boton.addEventListener('click', addParagraph);
+    </script>
+</body>
+
+</html>
